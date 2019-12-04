@@ -1,17 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="20dp"
     tools:context=".MainActivity">
 
-    <Button
-        android:layout_width="wrap_content"
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Start work"
-        android:id="@+id/button"
-  />
+        android:layout_above="@id/button"
+        android:layout_marginBottom="40dp"
+        />
 
-</android.support.constraint.ConstraintLayout>
+
+    <Button
+
+        android:layout_above="@id/button_stop"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0000FF"
+        android:text="Start work"
+        android:textAllCaps="false"
+        android:textColor="#FFF" />
+
+    <Button
+        android:background="#0000FF"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:id="@+id/button_stop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stop work"
+        android:layout_centerInParent="true"
+/>
+
+    <TextView
+        android:id="@+id/request_condition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_stop"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        
+        android:text="Developed by Grazac"
+        />
+
+</RelativeLayout>
 

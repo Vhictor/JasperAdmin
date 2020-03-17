@@ -73,7 +73,7 @@ public class DataService extends Service{
         initializeTimerTask();
 
         //schedule the timer, to wake up every 1 minute and the period is 10 seconds
-        timer.schedule(timerTask, 1000, 20000); //
+        timer.schedule(timerTask, 1000, 30000); //
     }
 
     public void initializeTimerTask() {
